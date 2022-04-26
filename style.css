@@ -1,0 +1,71 @@
+:root {
+    --orange-red : #e60000;
+    --yellow: #f3f100;
+    --dark-blue: #060e1f;
+    --rotate: 0deg;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--dark-blue);
+
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+    position: relative;
+    top: 15%;
+    height: 250px;
+    width: 250px;
+    background-image: url('clock.png');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px 
+                         linear-gradient(transparent, #0005);
+}
+
+.clock::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 400;
+}
+
+.clock .hour, .clock .min, .clock .sec {
+    position: absolute;
+    background-color: var( --orange-red);
+    border-radius: 15px 15px 0 0;
+    transform: translateY(-50%) rotate(var(--rotate));
+    transform-origin: bottom;
+}
+
+.clock .hour {
+    height: 70px;
+    width: 8px;
+    z-index: 100;
+}
+.clock .min {
+    height: 80px;
+    width: 5px;
+    background-color: var(--yellow);
+    z-index: 200;
+}
+.clock .sec {
+    height: 120px;
+    width: 2px;
+    z-index: 300;
+}
