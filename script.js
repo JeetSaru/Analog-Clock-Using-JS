@@ -14,3 +14,4 @@ setInterval(() => {
     min.style.setProperty('--rotate', mm + 'deg');
     sec.style.setProperty('--rotate', ss + 'deg');
 });
+
