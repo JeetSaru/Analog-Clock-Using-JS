@@ -1,5 +1,10 @@
-/*Code was by CODING DESIGN 
-you can checkout YouTube Channel : https://www.youtube.com/c/CodingDesign2*/
+/*
+Buid Working Analog Clock with JS.
+By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+*/
 
 const hour = document.querySelector('.hour');
 const min = document.querySelector('.min');
